@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061b13">
+  <meta name="description" content="Explore the Aarvi Collection premium 26-page interactive jewellery flipbook, based in Belagavi, Karnataka, with collections, seasonal offer previews and a Gold Saving Scheme story.">
+  <title>Aarvi Jewellers | Premium Flipbook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" id="brandHome" aria-label="Aarvi Jewellers home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-name">AARVI<small>JEWELLERS</small></span>
+      <span class="brand-divider"></span>
+      <span class="brand-tagline">Timeless Elegance<br><i>Belagavi, Karnataka</i></span>
+    </a>
+    <div class="header-right">
+      <a class="header-contact whatsapp-pulse" href="https://wa.me/918073112321?text=Hello%20Aarvi%20Jewellers%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="Chat with Aarvi on WhatsApp"><span class="whatsapp-glyph">◉</span><span class="hide-small">WhatsApp</span></a>
+      <a class="header-number" href="tel:+918073112321">8073112321</a>
+      <a class="round-icon call-icon" href="tel:+918073112321" aria-label="Call Aarvi Jewellers" title="Call us">☎</a>
+      <button class="round-icon" id="menuButton" aria-label="Open table of contents" title="Table of contents">☰</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <nav class="side-nav" aria-label="Flipbook sections">
+      <button data-go="-1" class="side-link active" title="Home"><span class="nav-icon">⌂</span><small>Home</small></button>
+      <button data-go="4" class="side-link" title="Collections"><span class="nav-icon">◇</span><small>Collections</small></button>
+      <button data-go="11" class="side-link" title="Gold Saving Scheme"><span class="nav-icon">♧</span><small>Gold Scheme</small></button>
+      <button data-go="11" class="side-link" title="Services"><span class="nav-icon">✧</span><small>Services</small></button>
+      <button data-go="3" class="side-link" title="Gallery and stories"><span class="nav-icon">▧</span><small>Gallery</small></button>
+      <button data-go="11" class="side-link" title="Contact"><span class="nav-icon">✉</span><small>Contact</small></button>
+    </nav>
+
+    <section class="reader-area" aria-label="Aarvi Jewellers 26-page flip notebook">
+      <div class="stage-caption"><span class="gold-kicker">THE AARVI COLLECTION</span><span class="caption-rule"></span><span id="spreadCaption">A story on every page</span><span class="edition-pill">PREMIUM EDITION</span></div>
+      <div class="book-stage" id="bookStage">
+        <button class="page-arrow prev-arrow" id="prevBtn" aria-label="Previous page" title="Previous page"><span class="arrow-symbol">‹</span><small>PREVIOUS</small></button>
+        <div class="book-shell cover-mode" id="bookShell">
+          <div class="book-shadow"></div>
+          <div class="book" id="book" aria-live="polite"></div>
+          <section class="cover-gate" id="coverGate" aria-label="Aarvi Collection front cover" aria-hidden="false">
+            <img class="cover-gate-photo" src="assets/images/model-woman.jpg" alt="Jewellery model for the Aarvi Collection cover">
+            <div class="cover-gate-shade"></div>
+            <div class="cover-gate-copy">
+              <div class="cover-brand-mark">✦</div>
+              <div class="cover-gate-brand">AARVI <em>COLLECTION</em></div>
+              <div class="cover-gate-rule"></div>
+              <p class="cover-gate-eyebrow">A PREMIUM JEWELLERY STORYBOOK</p>
+              <h1>Every jewel tells<br><em>an amazing story.</em></h1>
+              <p class="cover-gate-description">Company profile · Precious collections · Gold-saving stories · Belagavi, Karnataka</p>
+              <button class="cover-continue" id="coverContinue" type="button"><span>SWIPE TO CONTINUE</span><b>→</b></button>
+              <div class="cover-gate-credit">DESIGNED BY <strong>CVIS</strong></div>
+            </div>
+            <div class="cover-gate-corner" aria-hidden="true">A · 01</div>
+          </section>
+        </div>
+        <button class="page-arrow next-arrow" id="nextBtn" aria-label="Next page" title="Next page"><span class="arrow-symbol">›</span><small>NEXT</small></button>
+      </div>
+
+      <div class="book-footer">
+        <div class="page-status"><span class="page-label">BOOK PAGES</span><strong id="spreadCount">01 / 26</strong></div>
+        <div class="progress-track" aria-label="Reading progress"><span id="progressBar"></span></div>
+        <div class="footer-tools">
+          <button class="control" id="firstBtn" title="First spread" aria-label="First spread">|‹</button>
+          <button class="control" id="lastBtn" title="Last spread" aria-label="Last spread">›|</button>
+          <button class="control" id="zoomOut" title="Zoom out" aria-label="Zoom out">⌕−</button>
+          <button class="control" id="zoomIn" title="Zoom in" aria-label="Zoom in">⌕+</button>
+          <button class="control" id="fullscreenBtn" title="Fullscreen"><span class="ctl-icon">⛶</span><span class="ctl-text">Fullscreen</span></button>
+          <button class="control" id="autoBtn" title="Auto flip"><span class="ctl-icon">▷</span><span class="ctl-text">Auto flip</span></button>
+          <button class="control" id="soundBtn" title="Page turn sound"><span class="ctl-icon">♬</span><span class="ctl-text">Page sound: On</span></button>
+          <button class="control" id="thumbsBtn" title="Page thumbnails"><span class="ctl-icon">▦</span><span class="ctl-text">Thumbnails</span></button>
+          <button class="control" id="shareBtn" title="Share this flipbook"><span class="ctl-icon">↗</span><span class="ctl-text">Share</span></button>
+        </div>
+      </div>
+
+      <div class="audio-dock" aria-label="Music controls">
+        <div class="audio-title"><span class="music-note">♫</span><span><b>South Indian Instrumentals</b><small>Original locally bundled ambience</small></span></div>
+        <button class="music-toggle" id="musicBtn" title="Play or pause background music" aria-pressed="false"><span id="musicToggleIcon">▶</span><span id="musicToggleLabel">Play music</span></button>
+        <label class="track-picker"><span>TRACK</span><select id="musicSelect" aria-label="Choose background music"><option value="veena">South Indian Veena &amp; Tanpura</option><option value="flute">Carnatic Flute Mood</option><option value="bells">Veena &amp; Temple Bells</option></select></label>
+        <label class="volume-control"><span class="vol-icon">◖))</span><span class="volume-label">VOLUME <b id="musicVolumeValue">42%</b></span><input id="musicVolume" type="range" min="0" max="100" value="42" aria-label="Background music volume"></label>
+      </div>
+      <div class="mobile-arrows"><button id="mobilePrev">← Previous</button><span id="mobilePage">01–02 / 26</span><button id="mobileNext">Next →</button></div>
+      <div class="thumbnail-wrap" id="thumbnailWrap"><div class="thumbnail-header"><div><span class="gold-kicker">QUICK NAVIGATION</span><strong>Explore the pages</strong></div><button id="closeThumbs" class="small-quiet">Hide thumbnails ×</button></div><div class="thumbnail-strip" id="thumbnailStrip" aria-label="Choose a spread"></div></div>
+      <div class="reader-note"><span>✦</span> Turn the pages to explore <b>Aarvi Collection</b> <span class="note-divider">|</span> Use the contents icon to jump to any section</div>
+    </section>
+  </main>
+
+  <aside id="contentsDrawer" class="contents-drawer" aria-hidden="true">
+    <div class="drawer-head"><div><span class="gold-kicker">AARVI JEWELLERS</span><h2>Table of Contents</h2><p>26 pages · 12 two-page spreads + covers</p></div><button id="closeDrawer" class="close-button" aria-label="Close contents">×</button></div>
+    <div class="drawer-tools"><span class="toc-count">CONTENTS</span><span>SELECT A SECTION ↗</span></div>
+    <div id="contentsList" class="contents-list"></div>
+    <div class="drawer-contact"><span class="whatsapp-glyph">◉</span><div><small>NEED A LITTLE HELP?</small><b>Talk to Aarvi Jewellers</b></div><a href="https://wa.me/918073112321" target="_blank" rel="noopener">Chat ↗</a></div>
+  </aside>
+  <div id="scrim" class="scrim"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <audio id="backgroundMusic" loop preload="auto" autoplay></audio>
+  <audio id="pageTurnAudio" src="assets/audio/page-turn.wav" preload="auto"></audio>
+  <audio id="buttonAudio" src="assets/audio/button.wav" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
